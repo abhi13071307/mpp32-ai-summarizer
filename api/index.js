@@ -79,7 +79,7 @@ app.get("/health", (req, res) => {
 
 
 app.get('/api/mpp32-verify', (req, res) => {
-  res.type('text/plain').send('6f2a376a80cf7604365711a91e71ac3a1f6232b91a7165dc27fe6d44bae6e2ac');
+  res.type('text/plain').send('faf6b3a3c6b0b45ec0da71d10c6e115c73d526342b0fd004cb8a58eebc7ebd5d');
 });
 
 module.exports = app;
