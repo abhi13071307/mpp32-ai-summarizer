@@ -54,6 +54,14 @@ app.post("/summarize", async (req, res) => {
   }
 });
 
+app.get("/demo", (req, res) => {
+  res.json({
+    service: "MPP32 AI Summarizer API",
+    status: "online",
+    usage: "POST /summarize with JSON body { text: 'your text' }"
+  });
+});
+
 app.get("/verify", (req, res) => {
   res.json({
     owner: "AK",
