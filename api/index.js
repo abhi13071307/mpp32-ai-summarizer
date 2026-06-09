@@ -69,4 +69,10 @@ app.get("/health", (req, res) => {
   });
 });
 
+
+app.get("/api/mpp32-verify", (req, res) => {
+  res.type("text/plain").send(
+    "9ee36706258547fb031479ab4d82f89a0f5f52554775ad1d009208fa0af28df8"
+  );
+});
 module.exports = app;
